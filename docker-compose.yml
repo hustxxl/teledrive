@@ -11,11 +11,11 @@ services:
 #     expose:
 #       - ${PORT:-4000}
     build:
-      context: ../.
+      context: .
       dockerfile: Dockerfile
       args:
-        - REACT_APP_TG_API_ID=${TG_API_ID}
-        - REACT_APP_TG_API_HASH=${TG_API_HASH}
+        - REACT_APP_TG_API_ID
+        - REACT_APP_TG_API_HASH
 #     environment:
 #       DATABASE_URL: postgres://postgres:${DB_PASSWORD}@db:5432/teledrive?connect_timeout=60&pool_timeout=60&socket_timeout=60
 #       REDIS_URI: redis://redis:6379
